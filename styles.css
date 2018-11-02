@@ -1,0 +1,144 @@
+    html {
+            scroll-behavior: smooth;
+        }
+        
+        h2 {  
+            text-align:  center;
+            margin-bottom: 80px;
+            padding-top: 250px;
+            font-size: 35px;
+            
+            overflow: hidden;
+        }
+        h2#home {
+            
+            animation: type 3s;
+        }
+
+        @keyframes type {
+            0% {
+                margin-left: -1500px;
+            }
+            100% {
+               margin-left: 0;
+            }
+        }
+
+        
+        body {
+           
+            background-image: url(space-1772986_1920.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            font-family: 'Arvo', serif;
+            color: white;
+        }
+
+        .pill-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            padding: 10px;
+        }
+
+
+        .pill-nav a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+            font-size: 17px;
+            border-radius: 5px;
+            background-color: cornflowerblue;
+            
+        }
+
+        .pill-nav a:hover {
+            background-color: palevioletred;
+            color: white;
+        }
+
+        .pill-nav a.active {
+            background-color: cornflowerblue;
+            color: white;
+        }
+       
+        img {
+            width: 240px;
+            margin-right: 100px; 
+            margin-left: 140px;
+            margin-top: 20px;
+        }
+        
+        img:hover {
+            animation: shake 0.5s;
+        }
+
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+
+
+
+        img.screen {
+            width: 600px;
+            margin-left: 440px;
+            margin-top: 5px;
+            margin-bottom: 150px;
+        }
+        
+        p {
+            margin top: 300px;  
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 100px;
+            text-align: center;
+            
+          } 
+    
+        i {
+            font-size: 100px;
+            margin-top: 0px;
+            margin-bottom: 10px;
+            margin-left: 280px;
+        }
+        
+        form {
+            margin-left: 600px;
+            margin-top: 100px;
+            margin-bottom: 200px;
+        }
+
+input[type=text], input[type=email], input[type=tel] {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    
+}
+
+textarea[name=message] {
+    width: 120px;
+    padding: 100px;
+    border: none;
+    
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+}
